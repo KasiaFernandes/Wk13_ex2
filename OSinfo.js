@@ -1,6 +1,5 @@
 var os = require("os");
 var uptime = require("./Uptime");
-uptime.print();
 function getOSinfo() {
     var type = os.type();
     if(type === "Darwin") {
@@ -16,7 +15,7 @@ function getOSinfo() {
     console.log("CPU model: ", cpu);
     console.log("User name: ", userInfo.username);
     console.log("Home dir: ", userInfo.homedir);
-    getUptime();
+    Uptime.print();
 }
 
 exports.print = getOSinfo;
