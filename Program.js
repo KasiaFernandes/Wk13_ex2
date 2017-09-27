@@ -15,7 +15,7 @@ process.stdin.on("readable", function() {
                 // getOSinfo(); 
                 break;
             default: 
-            process.stderr.write("Wrong instruction!");
+            process.stderr.write("Wrong instruction!\n");
         }
     }
 });
